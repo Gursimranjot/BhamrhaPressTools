@@ -55,6 +55,42 @@ function loader() {
     }, 1000);
 };
 
+
+
+$('.homepage-slides').owlCarousel({
+    items: 1,
+    dots: true,
+    navigation: true,
+    loop: true,
+    autoplay: true,
+    autoplayTimeout: 5000,
+    smartSpeed: 2000,
+    slideSpeed: 600,
+    navText: ["<i class='la la-angle-left'></i>", "<i class='la la-angle-right'></i>"],
+    responsive: {
+        0: {
+            items: 1,
+            nav: false,
+            dots: true,
+        },
+        600: {
+            items: 1,
+            nav: false,
+            dots: true,
+        },
+        768: {
+            items: 1,
+            nav: false,
+            dots: true,
+        },
+        1100: {
+            items: 1,
+            nav: true,
+            dots: true,
+        }
+    }
+});
+
 /* ===============================================
     2. SCROLL TOP
 =============================================== */

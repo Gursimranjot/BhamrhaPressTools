@@ -77,14 +77,23 @@
     transform: translateY(5px) rotate(0);
   }
 
+
+  .navbar-icon-ct .dropdown .nav-link::after{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+    margin-right: 11px;
+    position: absolute;
+    right: -10px;
+    top: 23px;
+  }
+  .navbar-icon-ct .dropdown .nav-link[aria-expanded="true"]::after{
+      content: "\f106";
+  }
+
  @media (max-width:991px){
     .navbar-icon-ct .dropdown .nav-link::after{
-        font-family: "Font Awesome 5 Free";
-        font-weight: 900;
-        content: "\f107";
-        margin-right: 11px;
-        position: absolute;
-        right: 0;
+       
         top: 7px;
       }
       .navbar-icon-ct .dropdown .nav-link[aria-expanded="true"]::after{

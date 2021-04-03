@@ -119,6 +119,7 @@ a:hover{
   --paragraph-color: #020202;
   --primary-rgba-color: rgba(3, 59, 74, 0.8);
   --secundary-rgba-color: rgba(1, 179, 228, 0.8);
+  --white: #fff;
 }
 
 *::-moz-selection {
