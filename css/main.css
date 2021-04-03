@@ -794,7 +794,7 @@ h5.subtitle{
   margin: 0 -5px;
 }
 
-.inner-gallery .img-gallery-magnific .magnific-img{
+.inner-gallery .img-gallery-magnific .magnitic-img-container{
   -ms-flex: 0 0 33.33%;
   flex: 0 0 33.33%;
   max-width: 33.33%;
@@ -802,6 +802,15 @@ h5.subtitle{
   padding-bottom: 10px;
 }
 
+.inner-gallery .img-gallery-magnific .magnitic-img-container .magnific-img{
+  padding: 5px;
+}
+
+
+.inner-gallery .img-gallery-magnific .magnific-img{
+  border: 1px solid #B1B1B1;
+  box-shadow: 2px 4px 5px #b1b1b1;
+}
 
 .mfp-arrow-right {
   background: url(../images/icons/next.png) no-Repeat top left !important;
@@ -819,7 +828,7 @@ h5.subtitle{
 
 @media (max-width:767px){
   
-.inner-gallery .img-gallery-magnific .magnific-img{
+.inner-gallery .img-gallery-magnific .magnitic-img-container{
   -ms-flex: 0 0 50%;
   flex: 0 0 50%;
   max-width: 50%;
