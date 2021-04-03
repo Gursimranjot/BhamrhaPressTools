@@ -60,13 +60,14 @@ function loader() {
 $('.homepage-slides').owlCarousel({
     items: 1,
     dots: true,
+    nav:true,
     navigation: true,
     loop: true,
     autoplay: true,
     autoplayTimeout: 5000,
     smartSpeed: 2000,
     slideSpeed: 600,
-    navText: ["<i class='la la-angle-left'></i>", "<i class='la la-angle-right'></i>"],
+    navText: ["<span class='fa-fw select-all fas'></span>", "<span class='fa-fw select-all fas'></span>"],
     responsive: {
         0: {
             items: 1,

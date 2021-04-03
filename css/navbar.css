@@ -210,7 +210,7 @@
   }
   
   .navbar.fixed-top.navbar-dark .navbar-nav .nav-link::after {
-    background-color: #c0ca33;
+    /* background-color: #c0ca33; */
   }
   
   .content {
