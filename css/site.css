@@ -286,7 +286,7 @@ ul.footer-social li .fab {
 }
 
 ul.quick-links {
-    margin-top: 30px;
+    /* margin-top: 30px; */
 }
 
 ul.quick-links li {
@@ -433,7 +433,14 @@ li.phone::before {
 }
 
 .section-title h2 {
-    margin-bottom: 10px;
+    color: #002a5b;
+    font-size: 2.5em;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-bottom: 30px;
+    text-decoration: underline;
 }
 
 /* =====================================
@@ -4949,16 +4956,17 @@ ul.side-bullets li::before {
 }
 
 .home-gallery .box {
-    border-bottom: 4px solid #fff;
-    box-shadow: 0 3px 9px -2px #d0cece;
+    border: 1px solid #B1B1B1;
+    box-shadow: 2px 4px 5px #b1b1b1;
     margin-bottom: 20px;
-    /* padding: 5px; */
+    padding: 5px;
 }
 
 
 .home-gallery .box span.title {
     display: block;
-    color: var(--secundary-color);
+    /* color: var(--secundary-color); */
+    color: #194f8f;
     font-weight: 600;
     font-size: 1.2em;
     padding-top: 10px;
@@ -4967,7 +4975,7 @@ ul.side-bullets li::before {
 }
 
 .facilities{
-    background-image: url(../assets/bambra-bg.jpg);
+    background-image: linear-gradient(#002a5b, #0563d0);
     height: 100%;
     background-position: center;
     background-repeat: no-repeat;
@@ -4983,7 +4991,7 @@ ul.side-bullets li::before {
     right: 0;
     bottom: 0;
     left: 0;
-    background-color: rgb(0, 0, 0, 0.8);
+    /* background-color: rgb(0, 0, 0, 0.8); */
 }
 
 .facilities h2{
@@ -5013,10 +5021,39 @@ ul.side-bullets li::before {
     top: -20px;
 }
 
-.facilities .facility-row{
-    margin-bottom: 50px;
-}
 
 .about-section{
     margin: 50px 0;
+}
+
+.inner-page{
+    margin-top: 146px;
+}
+
+.breadcrumb-container{
+    background: #f0542d;
+    padding: 30px 0;
+    color: #fff;
+}
+
+.breadcrumb-container .breadcrumb{
+    background: transparent;
+    margin-bottom: 0;
+}
+
+.breadcrumb-container .breadcrumb .breadcrumb-item a{
+    color: #fff;
+}
+
+.breadcrumb-container .breadcrumb .breadcrumb-item.active {
+    color: #000;
+}
+
+
+.breadcrumb-container .breadcrumb-item+.breadcrumb-item::before{
+    color: #fff;
+}
+
+.page-content{
+    margin-top: 50px;
 }
