@@ -65,7 +65,9 @@ body {
   font-size: 15px;
   line-height: 25px;
   color: #9dabaf;
-  background-color: #FFF;
+  /* background-color: #efefef; */
+  background-color: #e2e2e2;
+  /* background-color: var(--primary-color); */
   letter-spacing: 0px;
   font-family: 'Open Sans', sans-serif;
 }
@@ -196,8 +198,9 @@ h6 {
 p {
   margin: 0 0 15px;
   font-family: 'Open Sans', sans-serif;
-  font-size: 15px;
+  font-size: 16px;
   color: var(--paragraph-color);
+  line-height: 30px;
 }
 
 h6 a {
@@ -805,6 +808,8 @@ h5.subtitle{
 .inner-gallery .img-gallery-magnific .magnitic-img-container .magnific-img{
   padding: 5px;
 }
+
+
 
 
 .inner-gallery .img-gallery-magnific .magnific-img{
@@ -1658,3 +1663,37 @@ screen and (max-height: 300px) {
 
 @media (max-width:380px) {}
 
+
+
+.inner-gallery .video-gallery{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -5px;
+}
+
+
+.inner-gallery .video-gallery .video-section{
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 0 5px;
+  padding-bottom: 10px;
+}
+
+.inner-gallery .video-gallery .video-section .video-inner{
+  border: 1px solid #B1B1B1;
+  box-shadow: 2px 4px 5px #b1b1b1;
+}
+
+
+/* .inner-gallery .video-gallery {
+  -ms-flex: 0 0 33.33%;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 0 5px;
+  padding-bottom: 10px;
+}
+
+.inner-gallery .video-gallery{
+  padding: 5px;
+} */

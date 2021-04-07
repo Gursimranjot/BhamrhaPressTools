@@ -119,8 +119,8 @@ p.address {
 .top-header-left p.telephone {
     margin-bottom: 0px;
     color: #FFF;
-    font-size: 13px;
-    padding: 15px 0px;
+    font-size: 16px;
+    padding: 10px 0px;
 }
 .top-header-left p.telephone  a{
     color: #fff;
@@ -148,8 +148,8 @@ p.address {
 .top-header-left p.mail {
     margin-bottom: 0px;
     color: #FFF;
-    font-size: 13px;
-    padding: 15px 0px;
+    font-size: 16px;
+    padding: 10px 0px;
 }
 
 .top-header-left p.mail a {
@@ -214,8 +214,38 @@ p.schedule,
 /* =====================================
     2. FOOTER.
 ======================================== */
+
+
+.facilities{
+    /* background-image: linear-gradient(#002a5b, #0563d0); */
+    /* background-color: #000022; */
+    /* background-image: url("/assets/bermuda-square.svg");
+    background-image: url("/assets/turtoil-noise3.svg"); */
+    background-color: #00b7ff;
+    height: 100%;
+    background-size: auto;
+    background-image: url(../assets/download.svg);
+    background-repeat: repeat;
+    background-position: center center;
+    padding: 30px 0px;
+}
+
+.facilities:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* background-color: rgb(0, 0, 0, 0.8); */
+}
+
 footer {
-    background: var(--headline-color);
+    /* background: var(--headline-color); */
+    background-color: rgba(0, 0, 0, 0.85);
+    height: 100%;
+    background-size: auto;
+    background-image: url(../assets/download.svg);
     height: 100%;
     padding: 10px 0px 60px 0px;
     clear: both;
@@ -248,7 +278,7 @@ footer a {
 }
 
 hr.footer-line {
-    border-top: 1px solid rgba(204, 204, 204, 0.1);
+    border-top: 1px solid rgba(204, 204, 204, 0.95);
     margin: 30px 0px 60px;
 }
 
@@ -298,6 +328,26 @@ li.phone::before {
     font-family: "Font Awesome 5 Free";
     font-weight: 900;
     content: "\f879";
+    margin-right: 13px;
+}
+
+li.email::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f0e0";
+    margin-right: 13px;
+}
+
+.footer-col ul li.phone,
+.footer-col ul li.address,
+.footer-col ul li.email{
+    display: flex;
+}
+
+li.address::before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f57e";
     margin-right: 13px;
 }
 
@@ -1270,6 +1320,11 @@ figure.client-logo img {
     background-color: #f0f2f5 !important;
     border-radius: 10px !important;
     transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.contact-form-new .custom-form,
+.contact-form-new .message-form{
+    background-color: #fff !important;
 }
 
 .custom-form::-ms-expand {
@@ -4962,6 +5017,34 @@ ul.side-bullets li::before {
     padding: 5px;
 }
 
+.home-gallery .box a{
+    position: relative;
+    overflow: hidden;
+    display: block;
+}
+
+.home-gallery .box a:before{
+        content: "";
+        position: absolute;
+        top: 0px;
+        left: 0;
+        right: 0px;
+        bottom: 0px;
+        background-color: rgba(0,0,0,.25);
+        visibility: hidden;
+        opacity: 0;
+        -webkit-transition: all .25s ease-in-out;
+        -moz-transition: all .25s ease-in-out;
+        -ms-transition: all .25s ease-in-out;
+        -o-transition: all .25s ease-in-out;
+        transition: all .25s ease-in-out;
+}
+
+.home-gallery .box a:hover:before {
+    visibility: visible;
+    opacity: 1;
+}
+
 
 .home-gallery .box span.title {
     display: block;
@@ -4977,14 +5060,15 @@ ul.side-bullets li::before {
 .facilities{
     /* background-image: linear-gradient(#002a5b, #0563d0); */
     /* background-color: #000022; */
-    background-image: url("/assets/bermuda-square.svg");
-    background-image: url("/assets/turtoil-noise3.svg");
+    /* background-image: url("/assets/bermuda-square.svg");
+    background-image: url("/assets/turtoil-noise3.svg"); */
+    background-color: #00b7ff;
     height: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    padding: 80px 0px;
+    background-size: auto;
+    background-image: url(../assets/download.svg);
+    background-repeat: repeat;
+    background-position: center center;
+    padding: 30px 0px;
 }
 
 .facilities:before{
@@ -4999,21 +5083,43 @@ ul.side-bullets li::before {
 
 .facilities h2{
     margin-bottom: 50px;
+    font-size: 2.5em;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 .facilities h2,
 .facilities h3,
 .facilities p{
     position: relative;
-    color: #fff;
+    color: #002a5b;
+}
+
+.facilities .list-simple li {
+    color: #002a5b;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+
+.facilities h3{
+    font-size: 30px;
 }
 
 .facilities ol{
     margin-bottom: 50px;
+    padding-left: 10px;
 }
 
 .facilities ol li{
-    color: #fff;
+    color: #002a5b;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 10px;
+    list-style-type: decimal;
 }
 
 .facilities .facility-icon svg{
@@ -5022,6 +5128,10 @@ ul.side-bullets li::before {
     height: 170px;
     position: relative;
     top: -20px;
+}
+
+.anchor-link{
+    color: #002a5b;
 }
 
 
