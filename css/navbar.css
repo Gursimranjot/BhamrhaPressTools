@@ -148,12 +148,14 @@
   
   .navbar .dropdown-menu .dropdown-item {
     position: relative;
-    padding: 10px 20px;
+    padding: 15px 20px;
     color: var(--headline-color);
     font-size: 13px;
     font-family: 'Open Sans', sans-serif;
     border-bottom: 1px solid rgb(221, 221, 221, 0.7);
     transition: color 0.2s ease-in;
+    text-transform: uppercase;
+    font-weight: 600;
   }
   
   .dropdown-menu {
@@ -300,13 +302,7 @@
     }
   
     .navbar .dropdown-menu .dropdown-item {
-      position: relative;
-      padding: 10px 20px;
-      color: var(--headline-color);
-      font-size: 13px;
-      font-family: 'Poppins', sans-serif;
-      border-bottom: 1px solid rgb(221, 221, 221, 0.7);
-      transition: color 0.2s ease-in;
+     
     }
   
     .navbar-dark .navbar-nav .nav-link:focus,

@@ -803,6 +803,7 @@ h5.subtitle{
   max-width: 33.33%;
   padding: 0 5px;
   padding-bottom: 10px;
+  height: 300px;
 }
 
 .inner-gallery .img-gallery-magnific .magnitic-img-container .magnific-img{
@@ -834,9 +835,9 @@ h5.subtitle{
 @media (max-width:767px){
   
 .inner-gallery .img-gallery-magnific .magnitic-img-container{
-  -ms-flex: 0 0 50%;
-  flex: 0 0 50%;
-  max-width: 50%;
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
   padding: 0 5px;
   padding-bottom: 10px;
 }
@@ -851,6 +852,7 @@ h5.subtitle{
   width: 100%;
   height: 100%;
   border-radius: 0px;
+  object-fit: cover;
 }
 
 .mfp-with-zoom .mfp-container,
@@ -1685,15 +1687,94 @@ screen and (max-height: 300px) {
   box-shadow: 2px 4px 5px #b1b1b1;
 }
 
-
-/* .inner-gallery .video-gallery {
-  -ms-flex: 0 0 33.33%;
-  flex: 0 0 33.33%;
-  max-width: 33.33%;
-  padding: 0 5px;
-  padding-bottom: 10px;
+@media (max-width:767px) {
+  .inner-gallery .video-gallery .video-section{
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 0 5px;
+    padding-bottom: 15px;
+  }
 }
 
-.inner-gallery .video-gallery{
-  padding: 5px;
-} */
+
+
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 15px;
+  z-index: 996;
+  background: var(--primary-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top i {
+  font-size: 28px;
+  color: #fff;
+  line-height: 0;
+}
+
+.back-to-top:hover {
+  background: var(--headline-color);
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+.icon-bar {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 1000;
+}
+
+
+.icon-bar a.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  overflow: hidden;
+  padding: 8px;
+  border: 1px solid #43E254;
+  border-radius: 8px;
+  background: #43E254;
+  transition: 0.2s;
+}
+.icon-bar a.button .whatsppicon {
+  font-size: 24px;
+  transition: 0.2s;
+}
+
+.icon-bar a.button:hover{
+  color: #000;
+}
+.icon-bar a.button .label-hidden {
+  max-width: 0;
+  opacity: 0;
+  /* max-height: 1em; */
+  white-space: nowrap;
+  transition: 0.2s;
+}
+.icon-bar a.button:hover .label-hidden {
+  max-width: 200px;
+  margin-left: 8px;
+  margin-right: 8px;
+  opacity: 1;
+}
